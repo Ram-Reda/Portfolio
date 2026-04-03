@@ -1,7 +1,7 @@
 :root {
 --carrot-orange: #ea9010ff;
 --steel-blue: #2081c3ff;
---white: #ffffffff;
+--white: #fff;
 --deep-space-blue: #212d40ff;
 --saffron: #e3b505ff;
 }
@@ -10,7 +10,6 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
-font-family: ;
 font-family: "Fjalla One", sans-serif;
 }
 
@@ -20,6 +19,7 @@ background-color: var(--deep-space-blue);
 
 .logo {
 color: #ea9010ff;
+padding: 10px 0 10px 0 ;
 }
 
 .navlinks {
@@ -28,9 +28,9 @@ color: #ea9010ff;
     gap: 50px;
 }
 
-a{
+.navlinks a{
     text-decoration: none;
-    color: #ffffffff;
+    color: #fff;
 }
 
 .navbar {
@@ -38,4 +38,39 @@ a{
     align-items: center;
     justify-content: space-around;
     background-color: #2081c3ff;
+    /* لتثبيت الشريط مكانه */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+ .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0 0 0 ;
+ }
+
+ .hero h1{
+    color: var(--white);
+    font-size: 80px;
+ }
+
+ .hero p{
+    color: var(--saffron);
+    font-size: 20px;
+ }
+
+.hero a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 20px;
+    background-color: var(--steel-blue);
+    padding: 5px;
+}
+
+.img img{
+    width: 400px;
+    border-radius: 500px 500px 0 0;
+    outline: 5px solid var(--steel-blue);
+    outline-offset: 10px;
 }
